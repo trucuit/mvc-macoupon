@@ -1,0 +1,53 @@
+*{
+	margin:0px;
+	padding: 0px;
+	font-family: 'Ubuntu-Regular';
+}
+
+#admin .form-group img {
+    width: 150px;
+}
+
+#admin label.img-label {
+    display: block;
+    width: 100%;
+}
+
+div#admin {
+    padding: 20px 0;
+}
+
+
+#admin th.stt {width: 5%;}
+
+#admin th.name {
+	width: 20%;
+}
+
+#admin th.view{
+	width: 5%;
+}
+#admin th.edit {
+	width: 10%;
+}
+#admin .image {
+	width: 130px;
+}
+
+#admin .image img {
+	width: 130px;
+}
+
+
+@media (max-width: 575px) { 
+	*{		
+	}
+
+	#admin th.edit {
+		width: 30%;
+	}
+
+	#admin .image,	#admin .view,	#admin .intro {
+		display: none;
+	}
+}
