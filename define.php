@@ -21,7 +21,7 @@ define('DEFAULT_ACTION', 'index');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'huyenmilk');
+define('DB_NAME', 'test_coupon');
 define('DB_TABLE', 'sanpham');
 
 // ====================== DATABASE TABLE===========================
@@ -29,3 +29,6 @@ define('TBL_SANPHAM', 'sanpham');
 
 // ====================== TITLE ===========================
 define('TITLE','Mỹ Phẩm Huyền Milk');
+
+// linkAccesstrade
+define("URL_ACCESSTRADE","https://pub.accesstrade.vn/deep_link/4649810820063061924");

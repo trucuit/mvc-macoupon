@@ -1,4 +1,4 @@
-<?php 
+<?php
 class CouponController extends Controller
 {
 	public function __construct($params)
@@ -10,10 +10,10 @@ class CouponController extends Controller
 		$this->_templateObj->load();
 	}
 
-	public function dulichAction()
+	public function indexAction()
 	{
-		$this->_view->render('dulich/index');
+		$this->_view->biena = 'abc';
+		$this->_view->listItem = $this->_model->showAllCoupon();
+		$this->_view->render('coupon/index');	
 	}
 }
-
-?>

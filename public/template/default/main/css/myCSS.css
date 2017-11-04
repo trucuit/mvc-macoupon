@@ -3,6 +3,213 @@
     padding: 0px;
 }
 
+.img-coupon a {
+    display: block;
+    width: 100%;
+}
+
+p.description {
+    text-align: justify;
+}
+
+#detail .list-unstyled li {
+    margin-left: 30px;
+}
+
+.saveamount img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+img {}
+#detail{
+    font-family: 'Quicksand', sans-serif;
+}
+#detail h4 {
+    margin: 20px 0;
+}
+/*CSS coupon*/
+.coupondiv .coupon-code {
+    position: absolute;
+    top: 0px;
+    right: -45px;
+    z-index: -1;
+    min-width: 50px;
+    height: 45px;
+    padding: 0 5;
+    font-weight: 500;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0px;
+    font-size: 16px;
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #ddd;
+}
+
+.coupondiv .copyma {
+    width: 110px;
+    min-width: 110px;
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+    padding: 15px 10px;
+    border: 0px;
+    background: #FE6F17;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #FE6F17;
+    border-radius: 0px;
+}
+
+.coupondiv .copyma:after {
+    border-left-color: #FE6F17;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 45px solid transparent;
+    border-left: 45px solid #FE6F17;
+    position: absolute;
+    right: -45px;
+    top: 0;
+}
+
+.coupondiv .cpinfo {
+    display: block;
+    margin-bottom: 5px;
+    color: #222;
+    line-height: 1.6;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.coupondiv .coupontitle {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+    color: #222;
+    font-weight: 500;
+    line-height: 1.6;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.coupondiv .saleorcoupon {
+    background: #1FB207;
+    padding: 7px 6px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 2em;
+}
+
+.coupondiv .saveamount {
+    min-height: 58px;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 4px 3px 0;
+    font-weight: 700;
+    line-height: 2.5;
+}
+
+.coupondiv .promotagcont {
+    background: #fff;
+    color: #FE6F17;
+    overflow: hidden;
+    width: 70px;
+    border-radius: 2px;
+    -webkit-box-shadow: 1px 1px 4px rgba(34, 34, 34, .2);
+    box-shadow: 1px 1px 4px rgba(34, 34, 34, .2);
+    text-align: center;
+}
+
+.coupondiv .cpbutton {
+    float: right;
+    position: relative;
+    z-index: 1;
+    text-align: right;
+    width: 140px;
+    margin-top: 35px;
+    margin-right: 15px;
+}
+
+.coupondiv .promotiondetails {
+    padding-left: 20px;
+    width: 66%;
+    word-wrap: break-word;
+    float: left;
+    font-size: 16px;
+}
+
+.coupondiv .promotag {
+    float: left;
+}
+
+.coupondiv .promotiontype {
+    padding: 15px;
+    overflow: hidden;
+}
+
+.coupondiv {
+    border: 1px solid #d3d3d3;
+    min-width: 250px;
+    margin-bottom: 6px;
+    background-color: #fff;
+}
+.xemngayz{
+    width: 150px;
+    min-width: 150px;
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+    padding: 15px 15px;
+    border: 0px;
+    background: #1FB207;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #1FB207;
+    border-radius: 0px;
+}
+/*//CSS coupon*/
+
+div#detail .banner a img {
+    width: 100%;
+}
+
+div#detail .banner.no-full a img {
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+.product .img-coupon {
+    height: 150px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.product .img-coupon img {
+    width: 70%;
+    /* height: 100%; */
+}
+
 
 html{
     font-size: 15px;
@@ -243,3 +450,4 @@ div#content .col-4 {
         *{}
     }
 /* //tablet */
+
