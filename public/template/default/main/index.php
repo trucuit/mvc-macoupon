@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +13,10 @@
 
 	$imageURL = $this->_dirImg;
 	?>
+
+	<!-- <meta http-equiv="refresh" content="3" > -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 </head>
 <body>
 	<!--header-->
@@ -19,14 +24,22 @@
 	<!--//header-->
 
 	<!--banner-->
-	<?php 
-	if($this->_fileView =='index/index')
-		include_once 'html/banner.php' 
-	?>
+	<?php include_once 'html/banner.php' 	?>
 	<!--//banner-->
 
 	<!--content-->
-	<?php include_once MODULE_PATH . DS . $this->_moduleName . DS . 'views' . DS . $this->_fileView . '.php'; ?>
+	<div id="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<?php include_once MODULE_PATH . DS . $this->_moduleName . DS . 'views' . DS . $this->_fileView . '.php'; ?>
+				</div>
+				<div class="col-md-4">
+					<?php include_once 'html/support.php' ?>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--//content-->
 
 	<!--footer-->

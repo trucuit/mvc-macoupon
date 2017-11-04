@@ -25,7 +25,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-3 menu">
-					<?php include_once MODULE_PATH . DS . $this->_moduleName . DS . 'views/html/menu.php';?>
+					<?php include_once 'html/menu.php';?>
 				</div>
 				
 				<div class="col-md-9 view-product">

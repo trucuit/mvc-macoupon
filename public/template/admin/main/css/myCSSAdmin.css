@@ -1,0 +1,21 @@
+*{
+	margin:0px;
+	padding: 0px;
+	font-family: 'Ubuntu-Regular';
+}
+
+#admin td a {
+    width: 300px;
+}
+
+#admin td a img {
+    width: 100%;
+}
+
+#admin table th.banner {
+    width: 15%;
+}
+#admin table th.logo {
+    width: 7%;
+}
+

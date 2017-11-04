@@ -15,11 +15,5 @@ class IndexController extends Controller
     $this->_view->render('index/index');
   }
 
-   public function ttAction()
-  {
-    $this->_view->render('tt/index');
-  }
-
-  
 
 }

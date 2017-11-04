@@ -30,14 +30,32 @@ class Model
 		$this->table = $table;
 	}
 
-	public function insert($data)
+	public function insert($data,$table)
 	{
-		$stmt = $this->conn->prepare("INSERT INTO `$this->table` (`name`, `price`, `image`, `description`) VALUES (:name, :price, :image, :description)");
-		$stmt->bindParam(':name', $data['name'], PDO::PARAM_STR);
-		$stmt->bindParam(':price', $data['price'], PDO::PARAM_INT);
-		$stmt->bindParam(':image', $data['image']['name'], PDO::PARAM_STR);
-		$stmt->bindParam(':description', $data['description'], PDO::PARAM_STR);
-		$stmt->execute();
+		$this->setTable($table);
+		$data = $this->createInsert($data);
+		foreach ($data as $value) {
+			$stmt = $this->conn->prepare("INSERT INTO `$this->table` (".$value['key'].") VALUES (".$value['value'].")");
+			$stmt->execute();
+		}
+		
+	}
+
+	public function createInsert($data)
+	{
+		$result = [];
+		foreach ($data as $key => $value) {
+			$result[$key]['key'] ='';
+			$result[$key]['value'] ='';
+			foreach ($value as $i => $o) {
+				$result[$key]['key'] .= "`".$i."`,";
+				$result[$key]['value'] .= "'".$o."',";
+			}
+			$result[$key]['key'] = rtrim($result[$key]['key'],",");
+			$result[$key]['value'] = rtrim($result[$key]['value'],",");
+		}
+		
+		return $result;
 	}
 
 	public function delete($id)
@@ -62,17 +80,20 @@ class Model
 		$stmt->execute();
 	}
 
-	public function showAll()
+	public function showAll($table)
 	{ 
-		$stmt = $this->conn->prepare("SELECT * FROM `$this->table`");
+
+		$stmt = $this->conn->prepare("SELECT * FROM `$table`");
 		$stmt->execute();
 		return $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 	}
 
-	public function show()
+	public function showID($table,$id)
 	{
-		$stmt = $this->conn->prepare("SELECT * FROM $this->table");
+		$this->setTable($table);
+		$stmt = $this->conn->prepare("SELECT * FROM `$this->table` WHERE id=:id");
+		$stmt->bindParam(":id", $id, PDO::PARAM_INT);
 		$stmt->execute();
 		return $data = $stmt->fetch(PDO::FETCH_ASSOC);
 

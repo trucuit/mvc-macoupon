@@ -25,36 +25,38 @@ class Controller
     //set Model
     public function setModel($module,$controller)
     {
-        $modelName = ucfirst($controller) . 'Model';
-        $fileModel = MODULE_PATH . DS . $module . DS . 'models' . DS . $modelName . '.php';
-        if (file_exists($fileModel)) {
-            include_once $fileModel;
-            $this->_model = new $modelName();
-        }
+     $modelName = ucfirst($controller) . 'Model';
+     $fileModel = MODULE_PATH . DS . $module . DS . 'models' . DS . $modelName . '.php';
+     if (file_exists($fileModel)) {
+        include_once $fileModel;
+        $this->_model = new $modelName();           
     }
+}
 
     //set View
-    public function setView($module)
-    {
-        $this->_view = new View($module);
-    }
+public function setView($module)
+{
+    $this->_view = new View($module);
+}
 
     //get View
-    public function getView()
-    {
-        return $this->_view;
-    }
+public function getView()
+{
+    return $this->_view;
+}
 
     //set Template
-    public function setTemplate()
-    {
-        $this->_templateObj =  new Template($this);
-    }
+public function setTemplate()
+{
+
+    $this->_templateObj =  new Template($this);
+ 
+}
 
     //set Params
-    public function setParams($params)
-    {
-        $this->_arrParam = $params;
-    }
+public function setParams($params)
+{
+    $this->_arrParam = $params;
+}
 
 }
