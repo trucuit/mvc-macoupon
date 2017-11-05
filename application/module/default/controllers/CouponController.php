@@ -12,7 +12,6 @@ class CouponController extends Controller
 
 	public function indexAction()
 	{
-		$this->_view->biena = 'abc';
 		$this->_view->listItem = $this->_model->showAllCoupon();
 		$this->_view->render('coupon/index');	
 	}
