@@ -11,17 +11,23 @@ class TravelController extends Controller
   }
   public function indexAction()
   {
-    // $result = Helper::callAPI('https://api.accesstrade.vn/v1/campaigns',null);
+// $result = Helper::callAPI('https://api.accesstrade.vn/v1/campaigns',null);
   // echo "<pre>";
-  // print_r($result);    
-  // echo "</pre>";
+      // print_r($result);    
+// echo "</pre>";
     $this->_view->listTravel = $this->_model->showAll('travel');
     $this->_view->render('travel/index');
   }
-
   public function detailAction()
   {
+
     $this->_view->travelItem = $this->_model->showID('travel',$this->_arrParam['id']);
     $this->_view->render('travel/travel');
+  }
+
+  public function testAction()
+  {
+    $this->_view->listTravel = $this->_model->showAll('travel');
+    $this->_view->render('travel/1');
   }
 }
