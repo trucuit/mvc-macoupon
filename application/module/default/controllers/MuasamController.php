@@ -12,6 +12,7 @@ class MuasamController extends Controller
 
 	public function lazadaAction()
 	{
+		// $this->_view->list = $this->_model->dataLazada();
 		$this->_view->render('muasam/lazada');
 	}
 }

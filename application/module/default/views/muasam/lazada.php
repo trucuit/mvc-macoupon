@@ -1,11 +1,12 @@
 <?php
 //include 'E:/datxampp/htdocs/do-an/mvc-macoupon/application/module/default/models/MuasamModel.php';
-$a=new MuasamModel();
-$arr=$a->dataLazada();
+$a   = new MuasamModel();
+$arr = $a->dataLazada();
 
 echo"<pre>";
 print_r($arr);
 echo "</pre>";
+
 ?>
 <div class="container wrap-coupon ">
 	
