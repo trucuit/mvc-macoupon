@@ -12,7 +12,7 @@ class Model
 				array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'")
 			);
 			$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-           // echo "Connected successfully";
+           //echo "Connected successfully";
 		} catch (PDOException $e) {
 			echo "Connected failed: " . $e->getMessage();
 			die();
@@ -30,14 +30,23 @@ class Model
 		$this->table = $table;
 	}
 
-	public function insert($data)
+	public function insert($data,$so)
 	{
-		$stmt = $this->conn->prepare("INSERT INTO `$this->table` (`name`, `price`, `image`, `description`) VALUES (:name, :price, :image, :description)");
-		$stmt->bindParam(':name', $data['name'], PDO::PARAM_STR);
-		$stmt->bindParam(':price', $data['price'], PDO::PARAM_INT);
-		$stmt->bindParam(':image', $data['image']['name'], PDO::PARAM_STR);
-		$stmt->bindParam(':description', $data['description'], PDO::PARAM_STR);
+		
+		$stmt = $this->conn->prepare("INSERT INTO `nhaphanphoi` (`name_sale`, `start`, `finish`, `campaign`, `ma_coupon`, `intro_coupon`, `link_banner`, `banner_html`, `size`, `link_original`, `link_distribution`) VALUES (:name_sale, :start, :finish, :campaign, :ma_coupon, :intro_coupon, :link_banner, :banner_html, :size, :link_original, :link_distribution)");
+		$stmt->bindParam(':name_sale', $data[$so]['name_sale'], PDO::PARAM_STR);
+		$stmt->bindParam(':start', $data[$so]['start'], PDO::PARAM_STR);
+		$stmt->bindParam(':finish', $data[$so]['finish'], PDO::PARAM_STR);
+		$stmt->bindParam(':campaign', $data[$so]['campaign'], PDO::PARAM_STR);
+		$stmt->bindParam(':ma_coupon', $data[$so]['ma_coupon'], PDO::PARAM_STR);
+		$stmt->bindParam(':intro_coupon', $data[$so]['intro_coupon'], PDO::PARAM_STR);
+		$stmt->bindParam(':link_banner', $data[$so]['link_banner'], PDO::PARAM_STR);
+		$stmt->bindParam(':banner_html', $data[$so]['banner_html'], PDO::PARAM_STR);
+		$stmt->bindParam(':size', $data[$so]['size'], PDO::PARAM_STR);
+		$stmt->bindParam(':link_original', $data[$so]['link_original'], PDO::PARAM_STR);
+		$stmt->bindParam(':link_distribution', $data[$so]['link_distribution'], PDO::PARAM_STR);
 		$stmt->execute();
+
 	}
 
 	public function delete($id)
@@ -97,4 +106,3 @@ class Model
 		return true;
 	}
 }
-?>

@@ -16,10 +16,19 @@
             <a class="nav-link" href="#">COUPON TODAY <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?module=default&controller=coupon&action=dulich">coupon du lịch</a>
+            
+              <li><a class="nav-link" href="index.php?module=default&controller=coupon&action=dulich">coupon du lịch</a></li>
+            
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">coupon mua sắm</a>
+            <a class="nav-link musam" href="#">coupon mua sắm</a>
+            <ul class="submenu">
+              
+               <li class="item-shopping"><a class="nav-link" href="#">Lazada</a></li>
+                <li class="item-shopping"><a class="nav-link" href="#">Tiki</a></li>
+                 <li class="item-shopping"><a class="nav-link" href="#">adayroi</a></li>
+            </ul>
+            
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">coupon taxi</a>

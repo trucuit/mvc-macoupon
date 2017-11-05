@@ -4,6 +4,114 @@
 }
 
 
+.show_coupon {
+    width: 40%;
+    height: 300px;
+    background: white;
+    margin: auto;
+}
+
+img.image_show_lazada {
+    width: 20%;
+    margin-left: 40%;
+}
+#mymodal{
+     display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/*
+modal of lazada*/
+
+}
+p.end-time {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+p.start-time {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+img.image_lazada {
+    width: 100px;
+    margin-left: 114px;
+    margin-top: -5px;
+    margin-bottom: 8px;
+}
+
+.get_coupon {
+    width: 200px;
+    height: 35px;
+    background: red;
+    margin: auto;
+    padding: 6px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+p.card-text.content_sale {
+    padding: 4px;
+    /* text-align: left; */
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+h5.card-title.ten_khuyenmai {background: #74d14c;text-align: center;padding: 4px;color: white;}
+
+h4.card-title.ten_khuyenmai {
+    background: #74d14c;
+    text-align: center;
+    padding: 7px;
+}
+
+.card-block.khung_khuyenmai {
+    padding: 0;
+}
+
+.card.card-height {
+    height: 400px;
+    position: relative;
+}
+
+.container.wrap-coupon {
+    display: table;
+    margin-bottom: 35px;
+}
+/*end lazada*/
+li.item-shopping {
+    position: relative;
+}
+
+li.nav-item:hover .submenu {
+    display: block;
+    z-index: 100;
+    background: #ffffff;
+    width: 180px;
+}
+
+ul.submenu {
+    list-style: none;
+    position: absolute;
+    display: none;
+}
+
 html{
     font-size: 15px;
 }
