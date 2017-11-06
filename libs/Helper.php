@@ -56,6 +56,12 @@ class Helper
 		return $xpath;
 	}
 
+	public static function cutCharacter($str, $char1, $char2)
+	{
+		 $pos1 = mb_stripos($str, $char1) + 2;
+		 $pos2 = mb_stripos($str, $char2);
+		return mb_substr($str, $pos1, $pos2 - $pos1);
+	}
 
 	// public static function callAPI()
 	// {

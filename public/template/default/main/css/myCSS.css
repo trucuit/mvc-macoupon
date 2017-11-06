@@ -3,6 +3,133 @@
     padding: 0px;
 }
 
+
+.w-100{
+    width: 100%;
+    height: 1px;
+    background: #d6d6d6;
+    margin: 20px 0;
+}
+
+#content .product-item p span {
+    color: #fc7700;
+    font-weight: bold;
+}
+
+.product-item {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+}
+
+#content .product-item h6 {
+    color: #fc7700;
+    margin-top: 5px;
+}
+
+#content p.price {
+    position: absolute;
+    top: 0;
+}
+
+#content p.price strong {
+    color: #fc7700;
+    font-size: 1.1rem;
+    margin-left: 5px;
+}
+
+#content .product-detail {
+    position: relative;
+    background-color: #fff;
+    margin: 0 15px;
+    padding: 0px !important;
+    min-height: 300px;
+}
+
+#content .img-product {
+    height: 180px;
+}
+
+#content .card-block {
+    padding: 0px;
+    /* margin: 10px; */
+    border: 0px;
+}
+
+.card-block {}
+
+#content .card {
+    margin: 10px;
+    border: none;
+}
+
+#content .logo-product {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+    display: table;
+    background-color: rgb(8, 59, 102);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#content .logo-product img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+#content .logo-product a {
+    display: table-cell;
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+}
+/*box product */
+.box-product .get_coupon {
+    width: 100%;
+    height: 35px;
+    background: red;
+    padding: 6px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.box-product p.start-time {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.box-product p.card-text.content_sale {
+    padding: 4px;
+    /* text-align: left; */
+    font-family: 'Roboto Condensed', sans-serif;
+    /* margin-left: 10px; */
+    /* margin-right: 2px; */
+}
+
+.box-product img.image_lazada {
+    width: 100%;
+    height: 100%;
+}
+
+.box-product h5.card-title.ten_khuyenmai {
+    background: #74d14c;
+    text-align: center;
+    padding: 4px;
+    color: white;
+}
+
+.box-product .card-block.khung_khuyenmai {
+    padding: 0;
+}
+
+.box-product .card.card-height {
+    height: 400px;
+    position: relative;
+}
+/*//box product */
 .img-coupon a {
     display: block;
     width: 100%;
@@ -21,7 +148,12 @@ p.description {
     margin-top: 10px;
 }
 
-img {}
+#content .product-item img {
+    width: 100%;
+    height: 200px;
+}
+
+#content .product-item img {}
 #detail{
     font-family: 'Quicksand', sans-serif;
 }
@@ -410,7 +542,7 @@ div#header ul li a:hover {
 
 
 div#footer {
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
     padding: 40px 0 0px 0;
 }
 
@@ -449,5 +581,5 @@ div#content .col-4 {
     @media (min-width: 575px) and (max-width:767px) {
         *{}
     }
-/* //tablet */
+    /* //tablet */
 
