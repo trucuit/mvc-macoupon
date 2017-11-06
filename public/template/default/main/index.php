@@ -29,8 +29,6 @@
 
 	<!--content-->
 	<div id="content">
-		<div class="container">
-			<div class="row">
 				<!-- <div class="col-md-8">
 					<?php //include_once MODULE_PATH . DS . $this->_moduleName . DS . 'views' . DS . $this->_fileView . '.php'; ?>
 				</div>
@@ -39,12 +37,10 @@
 				</div> -->
 				<?php include_once MODULE_PATH . DS . $this->_moduleName . DS . 'views' . DS . $this->_fileView . '.php'; ?>
 			</div>
-		</div>
-	</div>
-	<!--//content-->
+			<!--//content-->
 
-	<!--footer-->
-	<?php include_once 'html/footer.php' ?>
-	<!--//footer-->
-</body>
-</html>
+			<!--footer-->
+			<?php include_once 'html/footer.php' ?>
+			<!--//footer-->
+		</body>
+		</html>
