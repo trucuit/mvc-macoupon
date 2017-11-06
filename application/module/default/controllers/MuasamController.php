@@ -12,7 +12,28 @@ class MuasamController extends Controller
 
 	public function lazadaAction()
 	{
+		$this->_view->arr=$this->_model->dataLazada();
 		$this->_view->render('muasam/lazada');
+
+		// echo "<pre>";
+		// print_r($this->_view);
+		// echo "</pre>";
+	}
+	public function aAction(){
+		$this->_view->arr=$this->_model->dataLazada();
+		$this->_view->render('muasam/a');
+		echo "<pre>";
+		print_r($this->_view);
+		echo "</pre>";
+	}
+
+	public function ajaxAction(){
+		// $this->_view->arr=$this->_model->dataLazada();
+		// $this->_view->render('muasam/a');
+		
+		echo "<pre>";
+		print_r(this);
+		echo "</pre>";
 	}
 }
 
