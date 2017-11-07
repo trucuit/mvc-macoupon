@@ -63,27 +63,6 @@ class Helper
 		return mb_substr($str, $pos1, $pos2 - $pos1);
 	}
 
-	// public static function callAPI()
-	// {
-		// $data = array("domain" => "lazada.vn");
-		// $link = 'https://api.accesstrade.vn/v1/campaigns';                                                              ;
-		// $ch = curl_init();
-		// if(!empty($data)){
-		// 	$link .= "?". http_build_query($data);
-		// }
-		// curl_setopt($ch,CURLOPT_URL,$link);
-		// curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		// curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-		// 	'Content-Type: application/json',
-		// 	'Authorization: Token dSGj0VnNM7OoDMKLZ52T2CWth9o4oWI9'
-		// ));
-		// $result = curl_exec($ch);
-		// $result = json_decode($result);
-		// foreach ($result->data as $value) {
-		// 	echo "<pre>";
-		// 	print_r($result);    
-		// 	echo "</pre>";die();  
-		// }
-	// }
+	
 }
 ?>
