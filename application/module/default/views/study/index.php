@@ -1,5 +1,6 @@
 <?php
-$listTravel = $this->listTravel;
+$listStudy = $this->listStudy;
+$listItem = $this->listItem;
 $linkOpen = $this->linkOpen;
 $listItem   = empty($this->listItem) ? [] : $this->listItem;
 foreach ($linkOpen as $value) {	
@@ -7,13 +8,12 @@ foreach ($linkOpen as $value) {
 }
 ?>
 <div class="logo-item">
-	<div class="logo-croll">		
+	<div class="container">		
 		<div class="row">
-			
-			<?php foreach ($listTravel as $value): 
+			<?php foreach ($listStudy as $value): 
 			$domain = Helper::cutCharacter($value['domain'],'/','.');
-			$linkAjax = URL::createLink('default','travel','ajax',['id'=>$domain]);
-			$linkOpen = (in_array($value['domain'],$openLink)) ? URL_ACCESSTRADE."?url=".urlencode($value['domain']) : "#";
+			$linkAjax = URL::createLink('default','study','ajax',['id'=>$domain]);
+			$linkOpen = (in_array($value['domain'],$openLink)) ? URL_ACCESSTRADE."?url=".urlencode($value['domain']): "#";
 			?>
 			<div class="card">
 				<div class="card-block">
@@ -33,15 +33,14 @@ foreach ($linkOpen as $value) {
 </div>
 <div class="w-100 "></div>
 
-
 <div id="loader"></div>
-<div class="product-item">
+<div class="product-item" >
 	<?php if(!empty($listItem)) {?>
 	<div class="container">
 		<div class="row ">
 			<?php foreach ($listItem['title'] as $key => $value): ?>
 				<div class="col-md-4 col-sm-6 ">
-					<a href="<?php if(isset($listItem['link'][$key])) echo URL_ACCESSTRADE."?url=".urlencode($listItem['link'][$key]) ?>" target="_blank">
+					<a href="<?php if(isset($listItem['link'][$key])) echo $listItem['link'][$key] ?>" target="_blank">
 						<div class="product-detail">
 							<img  src="<?php if(isset($listItem['image'][$key])) echo $listItem['image'][$key] ?>" alt="Card image cap">
 							<div class="intro">

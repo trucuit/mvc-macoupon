@@ -6,11 +6,11 @@ $linkTaxi     = URL::createLink('default','taxi','index');
 $linkStudy    = URL::createLink('default','study','index');
 
 $arrLink      = array(
-  array('classLi'=>'nav-item','classA'=>'nav-link', 'link'=>$linkHome, 'content'=>'COUPON TODAY'),
-  array('classLi'=>'nav-item','classA'=>'nav-link', 'link'=>$linkTravel, 'content'=>'coupon du lịch'),
-  array('classLi'=>'nav-item','classA'=>'nav-link', 'link'=>$linkShopping, 'content'=>'coupon mua sắm'),
-  array('classLi'=>'nav-item','classA'=>'nav-link', 'link'=>$linkTaxi, 'content'=>'coupon taxi'),
-  array('classLi'=>'nav-item','classA'=>'nav-link', 'link'=>$linkStudy, 'content'=>'coupon học tập'),
+  array('classLi'=>'nav-item','classA'=>'nav-link index', 'link'=>$linkHome, 'content'=>'COUPON TODAY'),
+  array('classLi'=>'nav-item','classA'=>'nav-link travel', 'link'=>$linkTravel, 'content'=>'coupon du lịch'),
+  array('classLi'=>'nav-item','classA'=>'nav-link shopping', 'link'=>$linkShopping, 'content'=>'coupon mua sắm'),
+  array('classLi'=>'nav-item','classA'=>'nav-link taxi', 'link'=>$linkTaxi, 'content'=>'coupon taxi'),
+  array('classLi'=>'nav-item','classA'=>'nav-link study', 'link'=>$linkStudy, 'content'=>'coupon học tập'),
 );
 $listHeader = Helper::createUL('navbar-nav mr-auto', $arrLink);
 ?>
