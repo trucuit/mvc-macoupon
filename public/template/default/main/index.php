@@ -30,11 +30,11 @@
 	<!--content-->
 	<div id="content">
 				<!-- <div class="col-md-8">
-					<?php //include_once MODULE_PATH . DS . $this->_moduleName . DS . 'views' . DS . $this->_fileView . '.php'; ?>
+					<?php// include_once MODULE_PATH . DS . $this->_moduleName . DS . 'views' . DS . $this->_fileView . '.php'; ?>
 				</div>
 				<div class="col-md-4">
-					<?php //include_once 'html/support.php' ?>
-				</div> -->
+					<?php// include_once 'html/support.php' ?>
+				</div>  -->
 				<?php include_once MODULE_PATH . DS . $this->_moduleName . DS . 'views' . DS . $this->_fileView . '.php'; ?>
 			</div>
 			<!--//content-->

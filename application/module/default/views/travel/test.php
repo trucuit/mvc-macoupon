@@ -7,6 +7,8 @@ $listItem   = empty($this->listItem) ? [] : $this->listItem;
 ?>
 <?php if(!empty($listItem)) {?>
 <div class="container">
+	  <h2 class="text-center"><?php echo $listItem['domain'] ?></h2>
+    <p class="description"><?php echo $listItem['description'] ?></p>
 	<div class="row ">
 		<?php foreach ($listItem['title'] as $key => $value): ?>
 			<div class="col-md-4 col-sm-6 ">

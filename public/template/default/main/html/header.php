@@ -1,6 +1,6 @@
 <?php 
 $linkHome     = URL::createLink('default','index','index');
-$linkTravel   = URL::createLink('default','travel','index');
+$linkTravel   = URL::createLink('default','travel','test');
 $linkShopping = URL::createLink('default','shopping','index');
 $linkTaxi     = URL::createLink('default','taxi','index');
 $linkStudy    = URL::createLink('default','study','index');
