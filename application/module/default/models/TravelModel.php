@@ -6,7 +6,14 @@ class TravelModel extends Model
 		parent::__construct(); 
 		include LIBRARY_PATH . '/SimpleHtmlDom.php';
 	}
-	
+	public function selectItem($table, $name, $val)
+	{
+		$stmt = $this->conn->prepare("SELECT * FROM `$table` WHERE $name=:$name");
+		$stmt->bindParam(":$name", $val, PDO::PARAM_STR);
+		$stmt->execute();
+		return $data = $stmt->fetch(PDO::FETCH_ASSOC);
+
+	}
 	public function travel($domain = null)
 	{
 		$html = file_get_html('https://travel.com.vn/du-lich-gio-chot.aspx');
@@ -88,11 +95,11 @@ class TravelModel extends Model
 
 	public function bookin($domain = null)
 	{
-		$i=0;
+		// $i=0;
 		$html = file_get_html('http://www.bookin.vn/tour-du-lich');
-		foreach($html->find('.pager .individual-page a') as $element){
-			$i++;
-			$html = file_get_html("http://www.bookin.vn".$element->href);
+		// foreach($html->find('.pager .individual-page a') as $element){
+		// 	$i++;
+			// $html = file_get_html("http://www.bookin.vn".$element->href);
 			foreach($html->find('.tour-box .name a h2') as $element)
 				$listItem['title'][] = $element->innertext;
 			foreach($html->find('.tour-box .duration i') as $element)
@@ -103,9 +110,9 @@ class TravelModel extends Model
 				$listItem['image'][] = $element->src;
 			foreach($html->find('.tour-box .price') as $element)
 				$listItem['price'][] = $element->innertext;
-			if($i==2)
-				break;
-		}
+		// 	if($i==2)
+		// 		break;
+		// }
 		return $listItem;
 	}
 

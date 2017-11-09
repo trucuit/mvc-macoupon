@@ -3,6 +3,14 @@
     padding: 0px;
 }
 
+.product-item h2.text-center {
+    text-transform: uppercase;
+}
+
+.product-item p.description {
+    text-align: center;
+}
+
 #content p.time {
     position: absolute;
     top: 149px;

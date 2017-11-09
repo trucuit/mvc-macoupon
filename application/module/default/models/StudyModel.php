@@ -6,6 +6,16 @@ class StudyModel extends Model
 		parent::__construct();
 		include LIBRARY_PATH . '/SimpleHtmlDom.php';
 	}
+
+	public function selectItem($table, $name, $val)
+	{
+		$stmt = $this->conn->prepare("SELECT * FROM `$table` WHERE $name=:$name");
+		$stmt->bindParam(":$name", $val, PDO::PARAM_STR);
+		$stmt->execute();
+		return $data = $stmt->fetch(PDO::FETCH_ASSOC);
+
+	}
+
 	public function kyna($domain = null)
 	{
 		$html = file_get_html('https://kyna.vn/khuyen-mai/nhom-khoa-hoc');

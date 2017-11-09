@@ -14,6 +14,8 @@ class StudyController extends Controller
 	{
 		$this->_view->listStudy = $this->_model->showAll('study');
 		$this->_view->listItem = $this->_model->kyna('https://kyna.vn');
+		$this->_view->listItem['description'] = $this->_model->selectItem('study','domain','https://kyna.vn/')['description'];
+		$this->_view->listItem['domain'] ='kyna';
 		$this->_view->linkOpen = $this->_model->showAll('openlink');
 		$this->_view->render('study/index');	
 	}
@@ -24,9 +26,11 @@ class StudyController extends Controller
 			if(method_exists($this->_model,$this->_arrParam['id'])){
 				$id                    = $this->_arrParam['id'];
 				$this->_view->listItem = $this->_model->$id($this->_arrParam['domain']);
+				$this->_view->listItem['description'] = $this->_model->selectItem('study','domain',$this->_arrParam['domain'])['description'];
+				$this->_view->listItem['domain'] = Helper::cutCharacter($this->_arrParam['domain'],'/','.');
+				// echo 
 			}
 		}
-		echo 1;
 		$this->_view->render('study/ajax',false);
 	}
 }
