@@ -24,9 +24,9 @@
             <a class="nav-link musam" href="#">coupon mua sắm</a>
             <ul class="submenu">
               
-               <li class="item-shopping"><a class="nav-link" href="#">Lazada</a></li>
-                <li class="item-shopping"><a class="nav-link" href="#">Tiki</a></li>
-                 <li class="item-shopping"><a class="nav-link" href="#">adayroi</a></li>
+               <li class="item-shopping"><a class="nav-link" href="index.php?module=default&controller=shopping&action=lazada">Lazada</a></li>
+                <li class="item-shopping"><a class="nav-link" href="index.php?module=default&controller=shopping&action=tiki">Tiki</a></li>
+                 <li class="item-shopping"><a class="nav-link" href="index.php?module=default&controller=shopping&action=adayroi">adayroi</a></li>
             </ul>
             
           </li>

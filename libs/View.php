@@ -17,7 +17,7 @@ class View
             if($full == true){
                 $this->_fileView = $fileInclude;
                 include_once $this->_templatePath;
-            }else{
+            }else{  
                 include_once $filePath;
             }
         }

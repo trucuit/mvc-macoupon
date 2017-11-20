@@ -21,15 +21,16 @@ class Bootstrap
         $this->_params['controller'] = isset($this->_params['controller']) ? $this->_params['controller'] : DEFAULT_CONTROLLER;
         $this->_params['action'] = isset($this->_params['action']) ? $this->_params['action'] : DEFAULT_ACTION;
 
-echo"<pre>";
-        print_r($this->_params);
-        echo "</pre>";
+// echo"<pre>";
+//         print_r($this->_params);
+//         echo "</pre>";
     }
 
     public function loadFileExits($filePath, $controllerName)
     {
         include_once $filePath;
         $this->_controllerObj = new $controllerName($this->_params);
+      
         // echo"<pre>";
         // print_r($this->_controllerObj);
         // echo "</pre>";
