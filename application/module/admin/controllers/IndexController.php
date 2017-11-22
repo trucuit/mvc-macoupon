@@ -16,5 +16,6 @@ class IndexController extends Controller
 		$this->_view->listTravel  = $this->_model->showAll('travel');
 		$this->_view->render('index/index');
 	}
+	
 
 }

@@ -8,7 +8,7 @@ define('APPLICATION_PATH', ROOT_PATH . DS . 'application' ); // Định nghĩa �
 define('MODULE_PATH', APPLICATION_PATH .DS. 'module'); // Định nghĩa đường dẫn đến thư mục module
 define('TEMPLATE_PATH', PUBLIC_PATH .DS. 'template' ); // Định nghĩa đường dẫn đến thư mục template
 
-define('ROOT_URL', '/web/theme/mvc-macoupon');
+define('ROOT_URL', '/do-an/mvc-macoupon');
 define('APPLICATION_URL', ROOT_URL .DS. 'application');
 define('PUBLIC_URL', ROOT_URL .DS. 'public');
 define('TEMPLATE_URL', PUBLIC_URL .DS. 'template');
@@ -21,7 +21,7 @@ define('DEFAULT_ACTION', 'index');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'test_coupon');
+define('DB_NAME', 'huyenmilk');
 define('DB_TABLE', 'sanpham');
 
 // ====================== TITLE ===========================
