@@ -21,8 +21,8 @@ class Template
     }
     public function load($title = null)
     {
-        $fileConfig = $this->_fileConfig;
-        $fileTemplate = $this->_fileTemplate;
+        $fileConfig     = $this->_fileConfig;
+        $fileTemplate   = $this->_fileTemplate;
         $folderTemplate = $this->_folderTemplate;
         $pathFileConfig = TEMPLATE_PATH . DS . $folderTemplate . DS . $fileConfig;
         if(file_exists($pathFileConfig)){

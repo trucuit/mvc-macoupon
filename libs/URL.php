@@ -1,7 +1,9 @@
 <?php 
 class URL
 {
-	public static function createLink($module, $controller, $action, $params = null)
+
+
+	static public  function createLink($module, $controller, $action, $params = null)
 	{		
 		$linkParam = '';
 		if(!empty($params)){
@@ -18,4 +20,7 @@ class URL
 		exit();
 	}
 }
+
+
 ?>
+

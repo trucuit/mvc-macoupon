@@ -21,7 +21,7 @@ define('DEFAULT_ACTION', 'index');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'huyenmilk');
+define('DB_NAME', 'test_coupon');
 define('DB_TABLE', 'sanpham');
 
 // ====================== TITLE ===========================

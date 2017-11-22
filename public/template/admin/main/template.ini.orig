@@ -1,0 +1,27 @@
+<<<<<<< HEAD
+﻿title	=	"Coupon"
+=======
+﻿title	=	"Mã Coupon"
+>>>>>>> origin/hhao
+
+metaHTTP[]	= "Content-Type|text/html; charset=utf-8"
+
+metaName[]	= "viewport|width=device-width, initial-scale=1, shrink-to-fit=no"
+<<<<<<< HEAD
+=======
+metaName[]	= "keywords|Mã coupon"
+>>>>>>> origin/hhao
+
+dirCss		= "css"
+
+fileCss[]	= "font-awesome.css"
+fileCss[]	= "bootstrap.min.css"
+fileCss[]	= "myCSSAdmin.css"
+
+dirJs		= "js"
+fileJs[]	= "jquery-3.2.1.min.js"
+fileJs[]	= "popper.min.js"
+fileJs[]	= "bootstrap.min.js"
+fileJs[]	= "myJS.js"
+
+dirImg		= "images"
