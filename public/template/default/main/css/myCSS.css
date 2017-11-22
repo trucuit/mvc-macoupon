@@ -150,7 +150,8 @@
 
 #content .card {
     margin: 10px;
-    border: none;
+    /* padding: 0px; */
+    border: 1px solid #e7e3e3;
 }
 
 #content .logo-product {
@@ -161,7 +162,7 @@
     margin: auto;
     vertical-align: middle;
     display: table;
-    background-color: #ef1522;
+    background-color: #74d14c;
     margin-bottom: 20px;
     /* padding: 10px; */
 }
@@ -574,7 +575,7 @@ div#banner {
 
 #header {
     border-bottom: 1px solid #d6d6d6;
-    background: #000;
+    background: #fff;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -949,6 +950,7 @@ div#banner {
 
 #header i.fa.fa-home {
     color: #083b66;
+    margin-top: 8px;
 }
 
 #header i.fa.fa-home:hover {
@@ -1088,10 +1090,6 @@ div#header ul li a:hover {
 /* //mobile */
 
 /* tablet */
-@media (min-width: 575px) and (max-width: 767px) {
-    * {
-    }
-}
 
 @media (min-width: 767px) and (max-width: 992px) {
     * {
