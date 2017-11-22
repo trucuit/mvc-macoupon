@@ -12,7 +12,7 @@ class Model
 				array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'")
 			);
 			$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-           // echo "Connected successfully";
+           //echo "Connected successfully";
 		} catch (PDOException $e) {
 			echo "Connected failed: " . $e->getMessage();
 			die();
@@ -30,32 +30,23 @@ class Model
 		$this->table = $table;
 	}
 
-	public function insert($data,$table)
+	public function insert($data)
 	{
-		$this->setTable($table);
-		$data = $this->createInsert($data);
-		foreach ($data as $value) {
-			$stmt = $this->conn->prepare("INSERT INTO `$this->table` (".$value['key'].") VALUES (".$value['value'].")");
-			$stmt->execute();
-		}
 		
-	}
+		$stmt = $this->conn->prepare("INSERT INTO `nhaphanphoi` (`name_sale`, `start`, `finish`, `campaign`, `ma_coupon`, `intro_coupon`, `link_banner`, `banner_html`, `size`, `link_original`, `link_distribution`) VALUES (:name_sale, :start, :finish, :campaign, :ma_coupon, :intro_coupon, :link_banner, :banner_html, :size, :link_original, :link_distribution)");
+		$stmt->bindParam(':name_sale', $data[$so]['name_sale'], PDO::PARAM_STR);
+		$stmt->bindParam(':start', $data[$so]['start'], PDO::PARAM_STR);
+		$stmt->bindParam(':finish', $data[$so]['finish'], PDO::PARAM_STR);
+		$stmt->bindParam(':campaign', $data[$so]['campaign'], PDO::PARAM_STR);
+		$stmt->bindParam(':ma_coupon', $data[$so]['ma_coupon'], PDO::PARAM_STR);
+		$stmt->bindParam(':intro_coupon', $data[$so]['intro_coupon'], PDO::PARAM_STR);
+		$stmt->bindParam(':link_banner', $data[$so]['link_banner'], PDO::PARAM_STR);
+		$stmt->bindParam(':banner_html', $data[$so]['banner_html'], PDO::PARAM_STR);
+		$stmt->bindParam(':size', $data[$so]['size'], PDO::PARAM_STR);
+		$stmt->bindParam(':link_original', $data[$so]['link_original'], PDO::PARAM_STR);
+		$stmt->bindParam(':link_distribution', $data[$so]['link_distribution'], PDO::PARAM_STR);
+		$stmt->execute();
 
-	public function createInsert($data)
-	{
-		$result = [];
-		foreach ($data as $key => $value) {
-			$result[$key]['key'] ='';
-			$result[$key]['value'] ='';
-			foreach ($value as $i => $o) {
-				$result[$key]['key'] .= "`".$i."`,";
-				$result[$key]['value'] .= "'".$o."',";
-			}
-			$result[$key]['key'] = rtrim($result[$key]['key'],",");
-			$result[$key]['value'] = rtrim($result[$key]['value'],",");
-		}
-		
-		return $result;
 	}
 
 	public function delete($id)
@@ -118,4 +109,3 @@ class Model
 		return true;
 	}
 }
-?>

@@ -24,7 +24,10 @@
 	<!--//header-->
 
 	<!--banner-->
-	<?php include_once 'html/banner.php' 	?>
+	<?php 
+	if($this->_fileView =='index/index')
+		include_once 'html/banner.php' 
+	?>
 	<!--//banner-->
 
 	<!--content-->
@@ -39,8 +42,8 @@
 			</div>
 			<!--//content-->
 
-			<!--footer-->
-			<?php include_once 'html/footer.php' ?>
-			<!--//footer-->
-		</body>
-		</html>
+	<!--footer-->
+	<?php include_once 'html/footer.php' ?>
+	<!--//footer-->
+</body>
+</html>
