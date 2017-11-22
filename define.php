@@ -24,11 +24,8 @@ define('DB_PASS', '');
 define('DB_NAME', 'test_coupon');
 define('DB_TABLE', 'sanpham');
 
-// ====================== DATABASE TABLE===========================
-define('TBL_SANPHAM', 'sanpham');
-
 // ====================== TITLE ===========================
-define('TITLE','Mỹ Phẩm Huyền Milk');
+define('TITLE','Mã coupon');
 
 // linkAccesstrade
 define("URL_ACCESSTRADE","https://pub.accesstrade.vn/deep_link/4649810820063061924");
