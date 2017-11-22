@@ -1,0 +1,30 @@
+<?php
+<<<<<<< HEAD:application/module/default/controllers/CouponController.php
+class CouponController extends Controller
+=======
+class UploadController extends Controller
+>>>>>>> origin/hhao:application/module/admin/controllers/UploadController.php
+{
+	public function __construct($params)
+	{
+		parent::__construct($params);
+		$this->_templateObj->setFolderTemplate('admin/main');
+		$this->_templateObj->setFileTemplate('index.php');
+		$this->_templateObj->setFileConfig('template.ini');
+		$this->_templateObj->load();
+	}
+
+<<<<<<< HEAD:application/module/default/controllers/CouponController.php
+	public function indexAction()
+	{
+		$this->_view->listItem = $this->_model->showAllCoupon();
+		$this->_view->render('coupon/index');	
+	}
+}
+=======
+	public function uploadACtion(){
+		$this->_view->render('upload/index');
+	}
+
+}
+>>>>>>> origin/hhao:application/module/admin/controllers/UploadController.php
