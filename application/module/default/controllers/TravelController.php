@@ -21,7 +21,7 @@ class TravelController extends Controller
   public function indexAction()
   {
     $this->_view->listTravel = $this->_model->showAll('travel');
-    $this->_view->render('travel/test');
+    $this->_view->render('travel/index');
   }
 
   public function detailAction()
