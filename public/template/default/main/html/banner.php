@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-12 col-md-3">
        <div class="logo">
-         <img src="<?php echo $imageURL?>/logo.png">
+         <img src="<?php echo $imageURL?>/logo1.png">
        </div>
      </div>
      <div class="hidden-md-down col-md-9">
