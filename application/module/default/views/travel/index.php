@@ -1,6 +1,6 @@
 <?php 
 $listTravel = $this->listTravel;
-$arrOpen = [6,9];
+$arrOpen = [6];
 ?>
 <div class="travel">
 	<?php foreach ($listTravel as $value) {
