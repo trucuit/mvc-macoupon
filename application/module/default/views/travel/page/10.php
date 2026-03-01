@@ -2,7 +2,7 @@
 	<h4><?php echo $travelItem['title'];?></h4>
 	<p class="description">	<?php echo $travelItem['description'];?></p>
 	<div class="banner">
-		<a href='https://pub.accesstrade.vn/deep_link/***REMOVED***?url=https%3A%2F%2Fwww.fiditour.com%2F' target="_blank"> <img src='https://s3-ap-southeast-1.amazonaws.com/images.accesstrade.vn/e3796ae838835da0b6f6ea37bcf8bcb7/7644_3087adac97995ef96350b8eca1a5103c_20171013102036322.png'/> </a>
+		<a href='https://pub.accesstrade.vn/deep_link/4649810820063061924?url=https%3A%2F%2Fwww.fiditour.com%2F' target="_blank"> <img src='https://s3-ap-southeast-1.amazonaws.com/images.accesstrade.vn/e3796ae838835da0b6f6ea37bcf8bcb7/7644_3087adac97995ef96350b8eca1a5103c_20171013102036322.png'/> </a>
 	</div>
 
 	<?php

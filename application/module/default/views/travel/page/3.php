@@ -2,7 +2,7 @@
 	<h4><?php echo $travelItem['title'];?></h4>
 	<p class="description">	<?php echo $travelItem['description'];?></p>
 	<div class="banner">
-		<a href='https://pub.accesstrade.vn/deep_link/***REMOVED***?url=http%3A%2F%2Fdivui.com%2F'> <img src='https://s3-ap-southeast-1.amazonaws.com/images.accesstrade.vn/84d9ee44e457ddef7f2c4f25dc8fa865/5727_DV-AT-Banner-Blog-600x150_20161212044827641.jpg'/> </a>	
+		<a href='https://pub.accesstrade.vn/deep_link/4649810820063061924?url=http%3A%2F%2Fdivui.com%2F'> <img src='https://s3-ap-southeast-1.amazonaws.com/images.accesstrade.vn/84d9ee44e457ddef7f2c4f25dc8fa865/5727_DV-AT-Banner-Blog-600x150_20161212044827641.jpg'/> </a>	
 	</div>
 	<h4>Lý do nên đặt vé tại divui.com?</h4>
 	<ul class="list-unstyled">

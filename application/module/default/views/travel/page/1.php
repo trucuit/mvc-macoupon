@@ -2,7 +2,7 @@
 	<h4><?php echo $travelItem['title'];?></h4>
 	<p class="description">	<?php echo $travelItem['description'];?></p>
 	<div class="banner no-full">
-		<a href='https://pub.accesstrade.vn/deep_link/***REMOVED***?url=https%3A%2F%2Fdichungtaxi.com%2F'> <img src='https://s3-ap-southeast-1.amazonaws.com/images.accesstrade.vn/d96409bf894217686ba124d7356686c9/7450_[AT] BLOG-02_20170714032817778.jpg'/> </a>
+		<a href='https://pub.accesstrade.vn/deep_link/4649810820063061924?url=https%3A%2F%2Fdichungtaxi.com%2F'> <img src='https://s3-ap-southeast-1.amazonaws.com/images.accesstrade.vn/d96409bf894217686ba124d7356686c9/7450_[AT] BLOG-02_20170714032817778.jpg'/> </a>
 	</div>
 	<h4>Vì sao chọn DICHUNGTAXI.COM</h4>
 	<ul class="list-unstyled">
